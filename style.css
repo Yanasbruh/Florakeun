@@ -106,7 +106,7 @@ nav .logo {
 .jumbotron h1 {
   color: white;
   padding: 100px 0 10px 50px;
-  font-size: 70px;
+  font-size: 60px;
 }
 
 .jumbotron img {
@@ -117,7 +117,7 @@ nav .logo {
 }
 
 .jumbotron h2 {
-  font-size: 70px;
+  font-size: 65px;
   margin-top: 80px;
   margin-left: 200px;
   color: #13ee5d;
@@ -334,15 +334,119 @@ footer a {
   }
 
   aside {
-    position: absolute;
-    top: 6100px;
-    left: 25vw;
-    width: 50%;
+    width: 100%;
+    margin: 0;
+    float: none;
   }
 
   aside img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+    margin-right: 10px;
+  }
+  nav ul {
+    margin: 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    justify-content: space-evenly;
+    height: 60vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #13ee5d;
+    z-index: 3;
+    transform: translateY(-100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  nav .logo {
+    font-size: 25px;
+    color: #13ee5d;
+    margin-left: 50px;
+  }
+
+  .jumbotron img {
+    margin-top: 50px;
+    height: 500px;
+    width: 500px;
+    margin-left: 50px;
+    float: none;
+    cursor: pointer;
+  }
+
+  .jumbotron h2 {
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: #13ee5d;
+  }
+
+  .jumbotron h1 {
+    color: white;
+    padding: 0px;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .jumbotron img {
+    margin-top: -25px;
+    height: 400px;
     width: 400px;
-    height: 300px;
+    margin-left: 75px;
+    float: none;
+    cursor: pointer;
+  }
+
+  .third-article p {
+    color: white;
+    font-size: 12px;
+    text-align: justify;
+    margin: 15px 0px 15px 0px;
+  }
+
+  .second-article img {
+    padding-top: 50px;
+    width: 300px;
+    height: 250px;
+  }
+
+  .third-article img {
+    width: 250px;
+    height: 150px;
+  }
+
+  .second-article h1 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .main-article p {
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    margin-right: 50px;
+  }
+
+  .main-article h1 {
+    font-size: 35px;
+    padding-top: 50px;
+    margin-left: 50px;
+    color: white;
   }
 }
 
@@ -459,15 +563,14 @@ footer a {
     color: white;
     padding: 0px;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 350px;
   }
 
   aside {
-    position: absolute;
-    top: 6610px;
-    left: 35px;
-    width: 80vw;
+    width: 80%;
+    float: none;
+    margin-left: 30px;
   }
 
   aside img {
