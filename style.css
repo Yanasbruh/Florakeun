@@ -8,6 +8,7 @@ body {
   background-color: #0f9334;
 }
 
+/* Navbar Start */
 nav {
   display: flex;
   justify-content: space-between;
@@ -44,6 +45,9 @@ nav .logo {
   margin-left: 50px;
 }
 
+/* Navbar End */
+
+/* Hamburger Start */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -97,6 +101,10 @@ nav .logo {
   transform: scale(0);
 }
 
+/* Hamburger End */
+
+/* Landing Pages Start */
+
 .jumbotron {
   background-color: #105b25;
   height: 100vh;
@@ -123,6 +131,9 @@ nav .logo {
   color: #13ee5d;
 }
 
+/* Landing Pages End */
+
+/* Article 1 Start */
 .main-article {
   width: 60%;
 }
@@ -145,6 +156,9 @@ nav .logo {
   font-size: 30px;
 }
 
+/* Article 1 End */
+
+/* Article 2 Start */
 .second-article {
   padding: 50px 30px 0px 50px;
 }
@@ -178,6 +192,9 @@ nav .logo {
   height: 250px;
 }
 
+/* Article 2 End */
+
+/* Article 3 Start */
 .third-article {
   padding: 50px 30px 0px 50px;
   background-color: #105b25;
@@ -211,6 +228,9 @@ nav .logo {
   height: 250px;
 }
 
+/* Article 3 End */
+
+/* Aside Start */
 aside {
   float: right;
   margin-top: 60px;
@@ -243,6 +263,9 @@ aside .card {
   border: 2px solid #105b25;
 }
 
+/* Aside End */
+
+/* Footer Start */
 footer {
   height: 50px;
   text-align: center;
@@ -258,7 +281,9 @@ footer a {
   color: #a8ff08;
 }
 
-/* Media Query On */
+/* Footer End */
+
+/* Media Query Start */
 @media screen and (max-width: 768px) {
   .main-article {
     width: 100%;
@@ -345,6 +370,9 @@ footer a {
   }
 }
 
+/* Media Query End */
+
+/* Media Query Start */
 @media screen and (max-width: 576px) {
   .menu-toggle {
     display: flex;
@@ -367,7 +395,7 @@ footer a {
     opacity: 0;
   }
 
-  nav ul.slide {
+  nav ul.show {
     opacity: 1;
     transform: translateY(0);
   }
@@ -450,6 +478,9 @@ footer a {
   }
 }
 
+/* Media Query End */
+
+/* Media Query Start */
 @media screen and (max-width: 376px) {
   .menu-toggle {
     display: flex;
@@ -472,7 +503,7 @@ footer a {
     opacity: 0;
   }
 
-  nav ul.slide {
+  nav ul.show {
     opacity: 1;
     transform: translateY(0);
   }
@@ -578,3 +609,5 @@ footer a {
     height: 250px;
   }
 }
+
+/* Media Query End */
